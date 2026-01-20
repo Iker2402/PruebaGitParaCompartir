@@ -11,6 +11,7 @@
 .loguito{
     display: block;
   margin: 0 auto;
+
 }
  .arialadder{font-family:Arial, sans-serif}
 .fúter{
@@ -19,3 +20,35 @@
       text-align: center;
       padding: 20px 0;
       margin-top: auto;}
+
+@media (max-width: 768px) {
+  .loguito {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  .vid30 {
+    width: 300px;
+    height: 145px;
+  }
+  .copilotayudame {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .chatgptayudame {
+   display: none;
+  }
+  .copilotayudame {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+}
+
+/* 
+chat: mobil
+copilot: pc 
+*/ 
