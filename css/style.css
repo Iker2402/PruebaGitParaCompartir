@@ -2,10 +2,10 @@
   text-align: center;
     font-family: Arial, sans-serif;
     text-shadow:
-    2px 2px 0 yellow,
-   -2px 2px 0 yellow,
-    2px -2px 0 yellow,
-   -2px -2px 0 yellow;
+    2px 2px 0 rgb(205,245,100),
+   -2px 2px 0 rgb(205,245,100),
+    2px -2px 0 rgb(205,245,100),
+   -2px -2px 0 rgb(205,245,100);
 }
 
 .loguito{
@@ -52,3 +52,33 @@
 chat: mobil
 copilot: pc 
 */ 
+
+
+
+/* La toolbar */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  background-color: #111;
+  padding: 1.2vh 0;              /* vertical space scales with screen height */
+  display: flex;
+  justify-content: center;
+  gap: 4vw;                      /* horizontal spacing scales with screen width */
+  flex-wrap: wrap;               /* prevents breaking on small screens */
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: clamp(14px, 1.2vw, 18px); /* responsive text */
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ff4655;
+}
