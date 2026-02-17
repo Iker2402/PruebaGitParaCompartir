@@ -32,6 +32,13 @@
     width: 300px;
     height: 145px;
   }
+
+/* 
+
+IGNORA LES CLASSES .copilotayudame i .chatgptayudame, eren tags per 
+a la pagina de "en construcció" de login abans de ferla funcional
+
+*/
   .copilotayudame {
     display: none;
   }
@@ -64,21 +71,70 @@ body {
 
 .nav {
   background-color: #111;
-  padding: 1.2vh 0;              /* vertical space scales with screen height */
+  padding: 1.2vh 0;
   display: flex;
   justify-content: center;
-  gap: 4vw;                      /* horizontal spacing scales with screen width */
-  flex-wrap: wrap;               /* prevents breaking on small screens */
+  gap: 4vw;
+  flex-wrap: wrap;
 }
 
 .nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: clamp(14px, 1.2vw, 18px); /* responsive text */
+  font-size: clamp(14px, 1.2vw, 18px);
   transition: color 0.2s ease;
 }
 
 .nav a:hover {
   color: #ff4655;
+}
+
+.inicidesessio {
+  text-align: center;
+}
+
+.formulario {
+    background: rgb(205,245,100);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+    margin: 20px auto;
+}
+
+.campdeformulari {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+.formulario button {
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(205,245,100);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.formulario button:hover {
+    opacity: 0.85;
 }
