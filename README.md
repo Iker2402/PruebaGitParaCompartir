@@ -27,9 +27,7 @@ El proyecto nace como una iniciativa académica y práctica para aprender desarr
 
 ### 📷 Captura de la pàgina de información
 
-```
 ![Captura de la pàgina de información](/imagesANDmultimedia/sobre2hkocaptura.png)
-```
 
 ### 💻 Ejemplo de código (estructura básica de un componente)
 
