@@ -3,21 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contacto - 2xKO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacte - 2xKO</title>
     <meta name="author" content="Iker Cárdenas">
     <meta name="description" content="Formulari de contacte de 2xKO">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./css/styleindexicontacte.css">
+    <link rel="stylesheet" href="./css/styleindexicontacte.css">
 </head>
 
 <body>
     <div class="container">
         <header>
             <div class="header-content">
-                <img src="./imagesANDmultimedia/2xko.png" alt="Logo 2xKO" class="header-image">
-                <h1>Contacto</h1>
+                <img src="./img/2xko.png" alt="Logo 2xKO" class="header-image">
+                <h1>Contacte</h1>
             </div>
             <nav class="navbar">
                 <a href="./index.html">Inicio</a>
@@ -27,38 +26,36 @@
             </nav>
         </header>
 
-        <main class="content-wrapper" style="grid-template-columns: 1fr; justify-items: center; padding: 3rem 1rem;">
-            <article class="card form-card" style="width: 100%;">
+        <main class="content-wrapper content-centered">
+            <article class="card form-card">
                 <h2>Formulari de Contacte</h2>
-                <p style="margin-bottom: 1.5rem; color: #e0e0e0; font-size: 0.9rem;">
-                    Por favor, póngase en contacto con el siguiente formulario.
-                </p>
+                <p class="form-subtitle">Posa't en contacte amb nosaltres mitjançant el següent formulari.</p>
 
                 <form action="" method="POST" class="form-grid">
-                    <div>
+                    <div class="form-group">
                         <label for="user">Usuari</label>
                         <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
                     </div>
 
-                    <div style="margin-top: 1rem;">
+                    <div class="form-group">
                         <label for="correo">Correu Electrònic</label>
                         <input type="email" id="correo" placeholder="Introdueix el teu correu" name="email" required>
                     </div>
 
-                    <div style="margin-top: 1rem;">
+                    <div class="form-group">
                         <label for="descripcion">Motiu de la consulta</label>
-                        <!-- S'ha canviat a textarea per millorar l'espai d'escriptura adaptat al CSS -->
-                        <textarea id="descripcion" placeholder="Descriu per què vols contactar amb nosaltres" name="description" rows="4" style="width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(0,212,255,0.15); color: #e8faff; border-radius: 8px; outline: none; resize: vertical;" required></textarea>
+                        <textarea id="descripcion" placeholder="Descriu per què vols contactar amb nosaltres" name="description" rows="4" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn" style="margin-top: 1.5rem; width: 100%;">Enviar</button>
+                    <button type="submit" class="btn btn-full">Enviar</button>
                 </form>
             </article>
         </main>
 
         <footer>
-            <p class="texto_footer">Pàgina feta per Iker Cárdenas, Arnau Milrado, Marc Llandres 2025</p>
+            <p class="texto_footer">© 2026 Arnau Milrado, Iker Cárdenas i Marc Llandres.</p>
         </footer>
     </div>
 </body>
+
 </html>
