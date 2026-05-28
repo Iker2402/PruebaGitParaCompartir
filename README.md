@@ -1,3 +1,4 @@
+
 # 🎮 2xKO Fan Forum & Info Hub
 
 Un foro y portal informativo hecho por fans dedicado al videojuego **2xKO**.

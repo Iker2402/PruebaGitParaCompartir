@@ -1,43 +1,64 @@
 <!DOCTYPE html>
+<html lang="ca">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Contacto</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/styleindexicontacte.css">
-        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    </head>
-    <header class="col-12 col-sm-12 col-md-12 col-lg-12">
-      <nav class="col-12 col-sm-12 col-md-12 col-lg-12"><a href="index.html">Índice</a></nav>
-    </header>
-    <body class="container">
-    <nav><a href="index.html">Índice</a><a href="about.html">About</a><a href="login.html">Login</a></nav>
-    <body>
-      <p>Por favor, pongase en contacto con el siguiente formulario.</p>
-      <form action="" method="POST">
-        <section class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <p>
-            <label for="user"><b>Usuari</b></label>
-            <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
-          </p>
-        </section>
-        <section class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <p>
-            <label for="correo"><b>Introdueix el seu correu</b></label>
-            <input type="email" id="correo" placeholder="Introdueix el seu correu" name="email" required>
-          </p>
-        </section>
-        <section class="col-12 col-sm-6 col-md-4 col-lg-2">
-          <p>
-            <label for="descripcion"><b>Descriu per que vol contactar amb nosaltres</b></label>
-            <input id="descripcion" type="text" placeholder="Descriu per que vol contactar amb nosaltres" name="description" required>
-          </p>
-        </section>
-      </form>
-        
-      <footer class="col-12 col-sm-12 col-md-12 col-lg-12"> <p class="texto_footer">Pàgina feta per Iker Cárdenas, Arnau Milrado, Marc Llandres 2025</p></footer>x
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacto - 2xKO</title>
+    <meta name="author" content="Iker Cárdenas">
+    <meta name="description" content="Formulari de contacte de 2xKO">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/styleindexicontacte.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="./imagesANDmultimedia/2xko.png" alt="Logo 2xKO" class="header-image">
+                <h1>Contacto</h1>
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Inicio</a>
+                <a href="./login.html">Login</a>
+                <a href="./about.html">About</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+        </header>
+
+        <main class="content-wrapper" style="grid-template-columns: 1fr; justify-items: center; padding: 3rem 1rem;">
+            <article class="card form-card" style="width: 100%;">
+                <h2>Formulari de Contacte</h2>
+                <p style="margin-bottom: 1.5rem; color: #e0e0e0; font-size: 0.9rem;">
+                    Por favor, póngase en contacto con el siguiente formulario.
+                </p>
+
+                <form action="" method="POST" class="form-grid">
+                    <div>
+                        <label for="user">Usuari</label>
+                        <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <label for="correo">Correu Electrònic</label>
+                        <input type="email" id="correo" placeholder="Introdueix el teu correu" name="email" required>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <label for="descripcion">Motiu de la consulta</label>
+                        <!-- S'ha canviat a textarea per millorar l'espai d'escriptura adaptat al CSS -->
+                        <textarea id="descripcion" placeholder="Descriu per què vols contactar amb nosaltres" name="description" rows="4" style="width: 100%; padding: 0.75rem 1rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(0,212,255,0.15); color: #e8faff; border-radius: 8px; outline: none; resize: vertical;" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="margin-top: 1.5rem; width: 100%;">Enviar</button>
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <p class="texto_footer">Pàgina feta per Iker Cárdenas, Arnau Milrado, Marc Llandres 2025</p>
+        </footer>
+    </div>
+</body>
 </html>

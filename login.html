@@ -4,26 +4,77 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inici de sessió (en construcció)</title>
+    <title>Inici de sessió - 2xKO</title>
     <meta name="author" content="Arnau M">
-    <meta name="description" content="">
+    <meta name="description" content="Inici de sessió per al fòrum de 2xKO">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="./imagesANDmultimedia/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/styleindexicontacte.css">
 </head>
 
 <body>
-    <header> </header>
-    <nav></nav>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="./imagesANDmultimedia/2xko.png" alt="Logo 2xKO" class="header-image">
+                <h1>Inici de Sessió</h1>
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Inicio</a>
+                <a href="./login.html">Login</a>
+                <a href="./about.html">About</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+        </header>
 
+        <main class="content-wrapper" style="grid-template-columns: 1fr; justify-items: center; padding: 4rem 1rem;">
+            <article class="card form-card" style="width: 100%;">
+                <h2>Accedeix al teu compte</h2>
+                <p style="margin-bottom: 1.5rem; color: #e0e0e0; font-size: 0.9rem;"> Introdueix les teves credencials per continuar.</p>
+                
+                <form id="loginForm" class="form-grid">
+                    <div>
+                        <label for="username">Usuari</label>
+                        <input type="text" id="username" placeholder="Introdueix el teu usuari" required>
+                    </div>
+                    
+                    <div style="margin-top: 1rem;">
+                        <label for="password">Contrasenya</label>
+                        <input type="password" id="password" placeholder="Introdueix la teva contrasenya" required>
+                    </div>
+                    
+                    <p id="errorMessage" style="color: #ff4a4a; font-weight: 600; display: none; margin-top: 1rem; font-size: 0.9rem; text-align: center; background: rgba(255,74,74,0.1); padding: 0.5rem; border-radius: 6px; border: 1px solid rgba(255,74,74,0.3);"></p>
+                    
+                    <button type="submit" class="btn" style="margin-top: 1.5rem; width: 100%;">Entrar</button>
+                </form>
+            </article>
+        </main>
 
-<h1>L'inici de sessió segueix en construcció</h1>
-<img src="./imagesANDmultimedia/enconstruccio.png" alt="Imatge de planificació d'edifici">
+        <footer>
+            <p class="texto_footer">© 2025 Arnau Milrado, Iker Cardenas y Marc Llandres. Todos los derechos reservados</p>
+        </footer>
+    </div>
 
-  <p>L'inici de sessió segueix en construcció, si us plau espereu i el tindrem funcional l'abans possible ;) </p>
-    <footer>
-    </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la pàgina es recarregui de forma automàtica
+
+            const usuariIntroduit = document.getElementById('username').value;
+            const contrasenyaIntroduida = document.getElementById('password').value;
+            const errorElement = document.getElementById('errorMessage');
+
+            // Validació de credencials de l'enunciat
+            if (usuariIntroduit === 'admin' && contrasenyaIntroduida === '1234') {
+                errorElement.style.display = 'none';
+                // Redirecció correcte a la pàgina principal
+                window.location.href = './index.html';
+            } else {
+                // Mostra un missatge d'error polit si les credencials fallen
+                errorElement.textContent = 'L\'usuari o la contrasenya són incorrectes.';
+                errorElement.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 
 </html>
